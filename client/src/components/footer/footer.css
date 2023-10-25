@@ -1,0 +1,13 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.footer span{
+    display: inline-block;
+    color: #000;
+    font-size: 24px;
+}
