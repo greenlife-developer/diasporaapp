@@ -1,14 +1,15 @@
-import { Footer } from 'antd/es/layout/layout';
+import Footer from "../../components/footer/Footer";
 import Banner from '../../components/Banner/Banner';
 import Header from '../../components/Header/Header';
-import Register from '../../components/Register/Register';
+import Main from "../../components/main/Main"
+
 
 const Home = () => {
   return (
     <section>
         <Header />
         <Banner />
-        <Register />
+        <Main />
         <Footer />
     </section>
   );

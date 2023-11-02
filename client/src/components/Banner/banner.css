@@ -1,35 +1,81 @@
-.banner{
+.banner {
     width: 100%;
     position: relative;
-    height: 100vh;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    height: 80vh;
 }
 
-.banner .banner-text{
+.banner .banner-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+    /* width: 90%; */
     text-align: center;
     padding: 1rem 0;
-    box-shadow: inset 5px 5px 10px 2px rgba(0,0,0,0.5);
-    transform: translateX(-50%) translateY(-50%);
 }
 
-.banner .banner-text h1{
+.banner .banner-text h1 {
     font-size: 48px;
+    margin-bottom: 16px;
+    color: #D5AB09;
+}
+
+.banner .banner-text h5 {
+    font-size: 28px;
+    margin-bottom: 16px;
     color: #fff;
 }
-.banner .banner-text .animation-span{
-    font-size: 46px;
+
+.banner .banner-text span {
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: #fff;
 }
 
-.banner button{
+.banner .banner-text .flex {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.commissioner::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: #D5AB09;
+    padding: .5rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+    content: "\f508";
+}
+
+.permanent-secretary::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    background: #D5AB09;
+    padding: .5rem;
+    margin-right: .5rem;
+    border-radius: 50%;
+    content: "\f501";
+}
+
+
+.banner button {
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     border: none;
-    padding: 1rem 4rem;
+    padding: .7rem 3rem;
     font-size: 18px;
     border-radius: .5rem;
     cursor: pointer;
@@ -38,17 +84,37 @@
 }
 
 
-@media screen and (max-width: 430px){
-    .banner img{
+@media screen and (max-width: 430px) {
+
+.banner button {
+    top: 90%;
+}
+
+    .banner img {
         object-fit: cover;
     }
 
-    .banner .banner-text h1{
-        font-size: 36px;
-        color: #fff;
+    .banner .banner-text .flex {
+        flex-direction: column;
+        margin-bottom: 5px;
+        gap: 10px;
     }
 
-    .banner .banner-text .animation-span{
-        font-size: 28px;
+
+    .banner .banner-text h1 {
+        font-size: 24px;
+        margin-bottom: 8px;
     }
+    
+    .banner .banner-text h5 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .banner .banner-text span {
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    
+    
 }

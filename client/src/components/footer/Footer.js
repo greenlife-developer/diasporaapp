@@ -1,10 +1,10 @@
 import "./footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear()
   return (
     <footer className='footer'>
-        <span>{Date.now().getFullYear}</span>
-        <span>By prince Boye Ologbese</span>
+        <span>{currentYear} &copy; Prince Boye Ologbese</span>
     </footer>
   );
 };

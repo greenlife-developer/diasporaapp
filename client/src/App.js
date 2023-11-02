@@ -8,6 +8,8 @@ import axios from "axios";
 import { SET_LOGIN } from "./redux/features/auth/authSlice";
 import { useEffect } from "react";
 import Dashboard from "./pages/Dashboard/Dashboard"
+import Login from "./pages/Login/Login";
+import Register from './pages/Register/Register'
 
 
 axios.defaults.withCredentials = true;
@@ -28,6 +30,9 @@ function App() {
         <ToastContainer />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+
           {/* <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot" element={<Forgot />} />
